@@ -1,0 +1,22 @@
+# Python Sanal Ortamı (Virtual Environment)
+.venv/
+venv/
+*/.venv/
+*/venv/
+
+# Python Cache Dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE (Kod Editörü) Ayar Dosyaları
+.idea/
+.vscode/
+
+# Jupyter Notebook Checkpoint'leri
+.ipynb_checkpoints/
+
+# Python Build Artefaktları
+build/
+dist/
+*.egg-info/
