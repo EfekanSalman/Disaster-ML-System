@@ -1,0 +1,23 @@
+# .pre-commit-config.yaml
+# This file tells the 'pre-commit' tool which "guards" to run
+# before executing a 'git commit'.
+
+# 'repos' are collections of "guards"
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0 # This is the version of pre-commit's own hooks
+    hooks:
+    -   id: check-yaml # Check YAML files (like this file itself)
+    -   id: end-of-file-fixer # Ensure there is a blank line at the end of files
+    -   id: trailing-whitespace # Remove unnecessary whitespace at the end of lines
+
+-   repo: https://github.com/psf/black
+    rev: 24.4.2 # The version of Black (the formatter)
+    hooks:
+    -   id: black # Run Black
+
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.5.0 # The version of Ruff (the linter)
+    hooks:
+    -   id: ruff
+        args: [--fix, --exit-non-zero-on-fix] # Automatically FIX errors
