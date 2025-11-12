@@ -1,22 +1,30 @@
-# Python Sanal Ortamı (Virtual Environment)
+# Python Virtual Environment
 .venv/
 venv/
 */.venv/
 */venv/
 
-# Python Cache Dosyaları
+# Python Cache Files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# IDE (Kod Editörü) Ayar Dosyaları
+# IDE (Code Editor) Settings Files
+# OUR MISTAKE WAS HERE, NOW FIXED
 .idea/
 .vscode/
+*.iml
 
-# Jupyter Notebook Checkpoint'leri
+# Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
 
-# Python Build Artefaktları
+# Python Build Artifacts
 build/
 dist/
 *.egg-info/
+
+# pre-commit cache
+.pre-commit-cache/
+
+# OS (Operating System) Junk
+.DS_Store

@@ -9,6 +9,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 # select the rows suitable for model training.
 # It will no longer TOUCH the X features.
 
+
 class DamageDataPreprocessor(BaseEstimator, TransformerMixin):
     """
     A component that prepares the REQUIRED ROWS and the TARGET VARIABLE

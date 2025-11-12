@@ -6,6 +6,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 # Its Single Responsibility: To take raw data and clean it
 # based on the 'Disaster Subgroup' target (y).
 
+
 class SubgroupDataPreprocessor(BaseEstimator, TransformerMixin):
     """
     A Scikit-learn pipeline component that processes raw data
